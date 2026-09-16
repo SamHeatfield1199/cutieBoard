@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.textarea {
+  width: 100%;
+  resize: none;
+  border: 1.5px solid var(--pink-muted);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--text);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+  line-height: 1.45;
+}
+
+.textarea:focus {
+  border-color: var(--pink);
+}
+
+.textareaError {
+  border-color: #e53e3e;
+}
+
+.error {
+  font-size: 11px;
+  color: #e53e3e;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.saveBtn {
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--pink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.saveBtn:hover {
+  background: var(--pink-dark);
+}
+
+.cancelBtn {
+  padding: 7px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--text-secondary);
+  transition: background 0.15s, color 0.15s;
+}
+
+.cancelBtn:hover {
+  background: var(--pink-light);
+  color: var(--pink);
+}

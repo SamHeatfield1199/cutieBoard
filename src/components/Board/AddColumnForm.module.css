@@ -1,0 +1,72 @@
+.form {
+  width: 260px;
+  min-width: 260px;
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 14px;
+  border: 1.5px solid var(--pink-border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: flex-start;
+}
+
+.input {
+  width: 100%;
+  border: 1.5px solid var(--pink-muted);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  font-size: 14px;
+  color: var(--text);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  border-color: var(--pink);
+}
+
+.inputError {
+  border-color: #e53e3e;
+}
+
+.error {
+  font-size: 11px;
+  color: #e53e3e;
+  margin-top: -4px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.saveBtn {
+  padding: 7px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--pink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.saveBtn:hover {
+  background: var(--pink-dark);
+}
+
+.cancelBtn {
+  padding: 7px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--text-secondary);
+  transition: background 0.15s, color 0.15s;
+}
+
+.cancelBtn:hover {
+  background: var(--pink-light);
+  color: var(--pink);
+}

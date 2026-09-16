@@ -1,0 +1,239 @@
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 16px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logoIcon {
+  font-size: 18px;
+}
+
+.logoText {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--pink);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 8px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--text-secondary);
+  width: 100%;
+  text-align: left;
+  transition: background 0.15s, color 0.15s;
+}
+
+.navItem:hover {
+  background: var(--pink-light);
+  color: var(--pink);
+}
+
+.navItemActive {
+  background: var(--pink-light);
+  color: var(--pink);
+  font-weight: 500;
+}
+
+.navIcon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.section {
+  padding: 0 8px;
+  flex: 1;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px 4px;
+}
+
+.sectionLabel {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.sectionAdd {
+  font-size: 16px;
+  color: var(--text-muted);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sectionAdd:hover {
+  background: var(--pink-light);
+  color: var(--pink);
+}
+
+.workspace {
+  margin-top: 4px;
+}
+
+.workspaceHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.workspaceAvatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--pink);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workspaceName {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.workspaceChevron {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.boardList {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 2px 0;
+}
+
+.boardListItem {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.boardItem {
+  flex: 1;
+  text-align: left;
+  padding: 6px 10px 6px 40px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: background 0.15s, color 0.15s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.boardItem:hover {
+  background: var(--pink-light);
+  color: var(--pink);
+}
+
+.boardItemActive {
+  color: var(--pink);
+  font-weight: 500;
+  background: var(--pink-light);
+}
+
+.boardDelete {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 15px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: background 0.15s, color 0.15s, opacity 0.15s;
+}
+
+.boardListItem:hover .boardDelete {
+  opacity: 1;
+}
+
+.boardDelete:hover {
+  background: #fee2e2;
+  color: #e53e3e;
+}
+
+.mascot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0 4px;
+  position: relative;
+}
+
+.mascotBubble {
+  font-size: 12px;
+  background: #fff;
+  border: 1px solid var(--pink-border);
+  border-radius: 12px 12px 12px 4px;
+  padding: 4px 8px;
+  margin-bottom: 2px;
+}
+
+.mascotCat {
+  font-size: 36px;
+}
+
+.createBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--pink);
+  width: 100%;
+  transition: background 0.15s;
+}
+
+.createBtn:hover {
+  background: var(--pink-light);
+}

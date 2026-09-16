@@ -1,0 +1,125 @@
+.card {
+  background: #fff;
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow 0.15s, transform 0.15s, opacity 0.15s;
+  cursor: grab;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.cardNoDrag {
+  cursor: default;
+}
+
+.cardDragging {
+  opacity: 0.4;
+  transform: rotate(1.5deg);
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  flex-shrink: 0;
+}
+
+.card:hover .actions {
+  opacity: 1;
+}
+
+.actionBtn {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-xs);
+  font-size: 13px;
+  transition: background 0.15s;
+}
+
+.actionBtn:hover {
+  background: var(--pink-light);
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.labelDev {
+  background: var(--label-dev-bg);
+  color: var(--label-dev-color);
+}
+
+.labelUiux {
+  background: var(--label-uiux-bg);
+  color: var(--label-uiux-color);
+}
+
+.labelResearch {
+  background: var(--label-research-bg);
+  color: var(--label-research-color);
+}
+
+.labelDesign {
+  background: var(--label-design-bg);
+  color: var(--label-design-color);
+}
+
+.labelQa {
+  background: var(--label-qa-bg);
+  color: var(--label-qa-color);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.dateIcon {
+  font-size: 12px;
+}

@@ -1,0 +1,225 @@
+.page {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--pink-bg);
+}
+
+.header {
+  padding: 36px 40px 0;
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+  padding-bottom: 24px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+  padding: 32px 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.cardPreview {
+  background: var(--pink-light);
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  min-height: 130px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cardIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.columnPreviews {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.colPreview {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.colPreviewHeader {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.colPreviewLine {
+  height: 8px;
+  background: var(--pink-border);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.cardBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cardDesc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.cardCols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.colChip {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: var(--pink-border);
+  color: var(--pink);
+  font-weight: 500;
+}
+
+.useBtn {
+  margin-top: auto;
+  padding: 9px 20px;
+  border-radius: var(--radius-sm);
+  background: var(--pink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: background 0.15s;
+}
+
+.useBtn:hover {
+  background: var(--pink-dark);
+}
+
+/* Use template inline form */
+.useFormBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.useForm {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 24px;
+  width: 380px;
+  max-width: calc(100vw - 32px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.useFormTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.useFormInput {
+  width: 100%;
+  border: 1.5px solid var(--pink-muted);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.useFormInput:focus {
+  border-color: var(--pink);
+}
+
+.useFormActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.useFormCancel {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  transition: border-color 0.15s;
+}
+
+.useFormCancel:hover {
+  border-color: var(--pink-muted);
+  color: var(--pink);
+}
+
+.useFormCreate {
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  background: var(--pink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.useFormCreate:hover {
+  background: var(--pink-dark);
+}

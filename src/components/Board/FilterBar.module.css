@@ -1,0 +1,99 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 28px;
+  background: var(--pink-light);
+  border-bottom: 1px solid var(--pink-border);
+  flex-wrap: wrap;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  transition: border-color 0.15s;
+  min-width: 200px;
+}
+
+.searchWrapper:focus-within {
+  border-color: var(--pink);
+}
+
+.searchIcon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: var(--text);
+  background: transparent;
+  width: 160px;
+}
+
+.searchInput::placeholder {
+  color: var(--text-muted);
+}
+
+.clearInput {
+  font-size: 16px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.clearInput:hover {
+  color: var(--pink);
+}
+
+.labels {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.labelChip {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1.5px solid var(--border);
+  background: #fff;
+  color: var(--text-secondary);
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.labelChip:hover {
+  border-color: var(--pink-muted);
+  color: var(--pink);
+}
+
+.labelChipActive {
+  border-color: var(--pink);
+  background: var(--pink-light);
+  color: var(--pink);
+  font-weight: 600;
+}
+
+.clearAll {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--pink);
+  border: 1.5px solid var(--pink-muted);
+  background: #fff;
+  transition: background 0.15s;
+  margin-left: auto;
+}
+
+.clearAll:hover {
+  background: var(--pink-light);
+}
