@@ -1,6 +1,7 @@
 # CutieBoard
 
 Милая Kanban-доска с розовой темой, построенная на React + TypeScript + MobX.
+<img width="1918" height="909" alt="image" src="https://github.com/user-attachments/assets/21efee3c-25fb-4045-a8c2-54af4fdc3636" />
 
 ## Возможности
 
